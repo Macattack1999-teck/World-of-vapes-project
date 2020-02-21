@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  
+  <script src="https://kit.fontawesome.com/3a571c9653.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="homepage.css">
+  <link rel="querySelector" href="index.js">
+
+</head>
+
+<body>
+  <div id="myModal" class="modal">
+    <div class="modal-content">
+      <div class="header">
+        <div class="certification">
+          <h1>Age Certification</h1>
+        </div>
+
+        <div class="certification">
+          <h2><strong>21+ ONLY</strong></h2>
+        </div>
+      </div>
+
+
+      <div class="content">
+        <p class="modal-text">
+          The products on this website are intended for adults only. <br> By selecting <strong class="verify">Yes</strong>, you certify that you are at least 21 years old and of legal smoking age.
+        </p>
+      </div>
+      <div class="verification">
+        <div class="yesofage">
+          <button class="ysBtn">YES</button>
+        </div>
+  
+        <div class="notofage">
+          <button class="nBtn">NO</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<div class="container">
+  <div class="navbar-container">
+    <div class="left-column">
+      <div class="phone-icon-wrapper">
+        <i class="fas fa-phone-volume"></i>
+      </div>
+      <div class="hours-number-wrapper">
+        <p class="phone-num">(801) 432-7656</p>
+        <p href="#">MON TO SAT: 9AM - 11PM<br> SUN:  10AM - 10PM</p>
+      </div>
+    </div>
+
+    <div class="center-column">
+      <div class="logo">
+        <img src="logo-images/worldofvape.png" alt="logo">
+      </div>
+
+      <div class="links">
+          <div class="link">
+            <a href="Home">Home</a>
+          </div>
+
+          <div class="link">
+            <a href="Vapes">Vapes</a>
+          </div>
+
+          <div class="link">
+            <a href="Juice">Juice</a>
+          </div>
+
+          <div class="link">
+            <a href="Glass">Glass</a>
+          </div>
+
+          <div class="link">
+            <a href="Contact">Contact</a>
+          </div>
+      </div>
+    </div>
+
+    <div class="right-column">
+      <div class="address-wrapper">
+        <a href="#">4150 s Carriage Square<br>Taylorsville, Utah<br>84129</a>
+      </div>
+      
+      <div class="map-icon-wrapper">
+        <i class="fas fa-map-marker-alt"></i>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+ <script>
+  let modal = document.querySelector("#myModal");
+  let yesBtn = document.querySelector(".ysBtn");
+  let noBtn = document.querySelector(".nBtn")
+
+  yesBtn.addEventListener("click", function() {
+    modal.style.display = "none";
+  })
+
+  noBtn.addEventListener("click", function() {
+    location.href = "https://www.webmd.com/lung-cancer/default.htm";
+  })
+ </script>
+</html>
