@@ -50,8 +50,12 @@
         <i class="fas fa-phone-volume"></i>
       </div>
       <div class="hours-number-wrapper">
-        <p class="phone-num">(801) 432-7656</p>
-        <p href="#">MON TO SAT: 9AM - 11PM<br> SUN:  10AM - 10PM</p>
+        <div class="call-num">
+          <p>Call!</p>
+        </div>
+        <a href="tel:8014327656" class="phone-num">(801)432-7656</a>
+        <!-- <a href="" class="phone-num">(801) 432-7656</p> -->
+        <p>MON TO SAT: 9AM - 11PM<br> SUN:  10AM - 10PM</p>
       </div>
     </div>
 
@@ -85,7 +89,10 @@
 
     <div class="right-column">
       <div class="address-wrapper">
-        <a href="#">4150 s Carriage Square<br>Taylorsville, Utah<br>84129</a>
+        <div class="get-directions">
+          <p>Get Directions!</p>
+        </div>
+        <a id="address-link-google">4150 s Carriage Square<br>Taylorsville, Utah<br>84129</a>
       </div>
       
       <div class="map-icon-wrapper">
@@ -98,7 +105,8 @@
  <script>
   let modal = document.querySelector("#myModal");
   let yesBtn = document.querySelector(".ysBtn");
-  let noBtn = document.querySelector(".nBtn")
+  let noBtn = document.querySelector(".nBtn");
+  let myAdd = document.querySelector("#address-link-google");
 
   yesBtn.addEventListener("click", function() {
     modal.style.display = "none";
@@ -106,6 +114,10 @@
 
   noBtn.addEventListener("click", function() {
     location.href = "https://www.webmd.com/lung-cancer/default.htm";
+  })
+
+  myAdd.addEventListener("click", function() {
+    location.href = "https://www.google.com/maps/place/4150+Carriage+Square,+Taylorsville,+UT+84129/@40.6804047,-111.941192,18.25z/data=!4m5!3m4!1s0x87528b83501b549f:0x7d01fe3dfeace4aa!8m2!3d40.6808657!4d-111.9410474"
   })
  </script>
 </html>
