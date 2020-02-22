@@ -8,8 +8,8 @@
   
   <script src="https://kit.fontawesome.com/3a571c9653.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="homepage.css">
-  <link rel="querySelector" href="index.js">
-
+  <link rel="stylesheet" href="nav-bar.css">
+  <link rel="stylesheet" href="homepage-slide-show.css">
 </head>
 
 <body>
@@ -43,7 +43,6 @@
     </div>
   </div>
 
-<div class="container">
   <div class="navbar-container">
     <div class="left-column">
       <div class="phone-icon-wrapper">
@@ -100,7 +99,40 @@
       </div>
     </div>
   </div>
-</div>
+
+  <div class="slideshow-container">
+    <div class="mySlides fade">
+      <img src="./logo-images/80046262_2334526453504871_3559417772481970176_o.jpg" style="width: 100%;">
+    </div>
+
+    <div class="mySlides fade">
+      <img src="./logo-images/26756251_1873079179649603_4166569873830448498_o.jpg" style="width: 100%;">
+    </div>
+
+    <div class="mySlides fade">
+      <img src="./logo-images/32911355_1928413534116167_3691975796269776896_n (1).jpg" style="width: 100%;">
+    </div>
+
+    <div class="mySlides fade">
+      <img src="./logo-images/27912777_1883853358572185_2027341723001519021_o.jpg" style="width: 100%;">
+    </div>
+
+    <div class="mySlides fade">
+      <img src="./logo-images/21462252_1819656434991878_7323414897475794928_n.jpg" style="width: 100%;">
+    </div>
+
+    <div class="mySlides fade">
+      <img src="./logo-images/18921834_1780181655606023_254700353966457051_n.jpg" style="width: 100%;">
+    </div>
+
+    <div class="mySlides fade">
+      <img src="./logo-images/20992642_1814290458861809_8490681797604641240_n.jpg" style="width: 100%;">
+    </div>
+
+    <div class="mySlides fade">
+      <img src="./logo-images/18893235_1780181648939357_7647334248694332583_n.jpg" style="width: 100%;">
+    </div>
+  </div>
 </body>
  <script>
   let modal = document.querySelector("#myModal");
@@ -119,5 +151,20 @@
   myAdd.addEventListener("click", function() {
     location.href = "https://www.google.com/maps/place/4150+Carriage+Square,+Taylorsville,+UT+84129/@40.6804047,-111.941192,18.25z/data=!4m5!3m4!1s0x87528b83501b549f:0x7d01fe3dfeace4aa!8m2!3d40.6808657!4d-111.9410474"
   })
+
+  var slideIndex = 0;
+  showSlides();
+
+  function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}
+    slides[slideIndex-1].style.display = "block";
+    setTimeout(showSlides, 10000); // Change image every 2 seconds
+  }
  </script>
 </html>
