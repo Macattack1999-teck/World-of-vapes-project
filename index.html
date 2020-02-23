@@ -7,10 +7,10 @@
   <title>Document</title>
   
   <script src="https://kit.fontawesome.com/3a571c9653.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="modal.css">
   <link rel="stylesheet" href="homepage.css">
   <link rel="stylesheet" href="nav-bar.css">
   <link rel="stylesheet" href="homepage-slide-show.css">
-  <link rel="stylesheet" href="modal.css">
 </head>
 
 <body>
@@ -54,7 +54,6 @@
           <p>Call!</p>
         </div>
         <a href="tel:8014327656" class="phone-num">(801)432-7656</a>
-        <!-- <a href="" class="phone-num">(801) 432-7656</p> -->
         <p>MON TO SAT: 9AM - 11PM<br> SUN:  10AM - 10PM</p>
       </div>
     </div>
@@ -129,9 +128,108 @@
     <div class="mySlides fade">
       <img src="./logo-images/20992642_1814290458861809_8490681797604641240_n.jpg" style="width: 100%;">
     </div>
+  </div>
 
-    <div class="mySlides fade">
-      <img src="./logo-images/18893235_1780181648939357_7647334248694332583_n.jpg" style="width: 100%;">
+  <div class="googlemaps">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3025.686725226506!2d-111.94323618467232!3d40.68087104745639!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87528b8349761533%3A0x3e62dacdc03ca41a!2sWorld%20Of%20Vapes!5e0!3m2!1sen!2sus!4v1582389643496!5m2!1sen!2sus"></iframe>
+  </div>
+
+  <div class="brands-slideshow-container">
+    <div class="brands-container">
+      <div class="brand-group">
+        <div class="brands">
+          <div class="brand-item">
+            <a class="brand-link" href="#"></a>
+            <img src="/brands-images/wotofo.jpg" alt="img">
+          </div>
+        </div>
+
+        <div class="brands">
+          <div class="brand-item">
+            <a class="brand-link" href="#"></a>
+            <img src="/brands-images/wismec.jpg" alt="img">
+          </div>
+        </div>
+      </div>
+      <div class="brand-group">
+        <div class="brands">
+          <div class="brand-item">
+            <a class="brand-link" href="#"></a>
+            <img src="/brands-images/voopoo.jpg" alt="img">
+          </div>
+        </div>
+        
+        <div class="brands">
+          <div class="brand-item">
+            <a class="brand-link" href="#"></a>
+            <img src="/brands-images/vandy_vape.jpg" alt="img">
+          </div>
+        </div>
+      </div>
+
+      <div class="brand-group">
+        <div class="brands">
+          <div class="brand-item">
+            <a class="brand-link" href=#"></a>
+            <img src="/brands-images/snowwolf.jpg" alt="img">
+          </div>
+        </div>
+
+        <div class="brands">
+          <div class="brand-item">
+            <a class="brand-link" href="#"></a>
+            <img src="/brands-images/smok.jpg" alt="img">
+          </div>
+        </div>
+      </div>
+
+      <div class="brand-group">
+        <div class="brands">
+          <div class="brand-item">
+            <a class="brand-link" href="#"></a>
+            <img src="/brands-images/pachamama.jpg" alt="img">
+          </div>
+        </div>
+
+        <div class="brands">
+          <div class="brand-item">
+            <a class="brand-link" href="#"></a>
+            <img src="/brands-images/naked_100.jpg" alt="img">
+          </div>
+        </div>
+      </div>
+
+      <div class="brand-group">
+        <div class="brands">
+          <div class="brand-item">
+            <a class="brand-link" href="#"></a>
+            <img src="/brands-images/lost_vape.jpg" alt="img">
+          </div>
+        </div>
+
+        <div class="brands">
+          <div class="brand-item">
+            <a class="brand-link" href="#"></a>
+            <img src="/brands-images/innokin.jpg" alt="img">
+          </div>
+        </div>
+      </div>
+
+      <div class="brand-group">
+        <div class="brands">
+          <div class="brand-item">
+            <a class="brand-link" href="#"></a>
+            <img src="/brands-images/humble_juice_co.jpg" alt="img">
+          </div>
+        </div>
+
+        <div class="brands">
+          <div class="brand-item">
+            <a class="brand-link" href="#"></a>
+            <img src="/brands-images/hellvape.jpg" alt="img">
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </body>
@@ -153,12 +251,12 @@
     location.href = "https://www.google.com/maps/place/4150+Carriage+Square,+Taylorsville,+UT+84129/@40.6804047,-111.941192,18.25z/data=!4m5!3m4!1s0x87528b83501b549f:0x7d01fe3dfeace4aa!8m2!3d40.6808657!4d-111.9410474"
   })
 
-  var slideIndex = 0;
+  let slideIndex = 0;
   showSlides();
 
   function showSlides() {
-    var i;
-    var slides = document.getElementsByClassName("mySlides");
+    let i;
+    let slides = document.getElementsByClassName("mySlides");
     for (i = 0; i < slides.length; i++) {
       slides[i].style.display = "none";
     }
