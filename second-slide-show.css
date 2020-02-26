@@ -1,0 +1,41 @@
+.brands-slideshow-container {
+  padding: 4rem 2rem;
+  background-color: #1d1f26;
+}
+
+.brands-container {
+  display: flex;
+  width: 85rem;
+}
+
+.brand-group {
+  padding-right: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 14rem
+}
+
+.last-brand-group {
+  padding-right: 0px;
+}
+
+.brand-item {
+  margin-bottom: 1rem;
+  width: 12.5rem;
+  height: 13rem;
+}
+
+.bottom-brand-item {
+  margin-bottom: 0px;
+}
+
+.brand-item img {
+  width: 90%;
+  border: 7px solid #dfa33a;
+  transition: 0.5s;
+}
+
+.brand-item img:hover {
+  width: 95%;
+}
